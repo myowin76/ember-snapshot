@@ -1,0 +1,30 @@
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ember_snapshot_development
+  pool: 5
+  username: root
+  password: password
+
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ember_snapshot_test
+  pool: 5
+  username: root
+  password: 
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ember_snapshot_production
+  pool: 5
+  username: root
+  password:
+
+cucumber:
+  <<: *test
